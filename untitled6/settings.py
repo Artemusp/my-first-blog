@@ -25,7 +25,7 @@ SECRET_KEY = '+7&ifg74@59q*po))q^9r1#_y8(zv*xy26&9c%^jf#-!q%*p_e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','get_pizda.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','artem0047.pythonanywhere.com']
 
 
 
