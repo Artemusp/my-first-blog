@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <title>Сайт по истории кино</title>
+       <style>
+   body {
+       background-image: url({% static 'fon.jpg' %});
+    background-color: #c7b39b; /* Цвет фона */
+
+   }
+  </style>
+  <style type="text/css">
+  </style>
+ </head>
+ <body>
+         {% block content %}
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        {{ post.published_date }}
+                    </div>
+                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+        {% endblock %}
+
+
+         <h1><a  class="btn btn-default" href="{% url 'post_new'  %}"><span class="glyphicon glyphicon-pencil"></span>New </a></h1>
+         <h1><a  class="btn btn-default" href="{% url 'post_delete'  %}"><span class="glyphicon glyphicon-pencil"></span>Delete </a></h1>
+
+  		<div> <a id = "link1" href = "https://vk.com/regnerische_stadt">  Основная страница    </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Страница курса   </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Ссылка на литературу   </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/regnerische_stadt"> Еще одна ссылка   </a>	 </div>
+
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Еще одна ссылка   </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Еще одна ссылка   </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Еще одна ссылка   </a>	 </div>
+  		<div> <a id = "link1" href = "https://vk.com/uspenskiys17b1"> Еще одна ссылка   </a>	 </div>
+        <div> <a id = "link1" href = {% static 'vova.jpg' %}> Vova </a>	 </div>
+
+
+<br><br>
+ <div id="content">
+ <h2>Тут просто текст....</h2>
+<p>
+
+Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ. Вот бы не слить экзы в ВШЭ.
+</p>
+</div>
+
+
+ </body>
+</html>

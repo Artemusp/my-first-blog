@@ -1,0 +1,29 @@
+
+
+   #link1{
+   	float: left;
+   	/*background: #C0C0C0;*/
+   	font-size: 100%;
+   	margin: 1%;
+   }
+
+ a:link {
+  color: #FFF000;
+}
+a:visited {
+  color: #FFFFFF;
+}
+a:hover {
+  color: #000000;
+}
+a:active {
+  color: #000000;
+  border-bottom: 1px dashed;
+}
+
+
+#content {
+ margin-right: 1px; /* Отступ справа */
+ padding: 10px; /* Отступы внутри правого блока */
+ background: #fff; /* Цвет фона правого блока */
+ }
